@@ -12,12 +12,6 @@ export default class Feedback extends Component {
     bad: 0,
   };
 
-  // onLeaveFeedback = event => {
-  //   this.setState(prevState => ({
-  //     [event.target.name]: prevState[event.target.name] + 1,
-  //   }));
-  // };
-
 onLeaveFeedback = key => {
     this.setState(prevState => ({
       [key]: prevState[key] + 1,

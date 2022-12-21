@@ -4,7 +4,7 @@ import { ButtonList, Button } from '../FeedBackOptions/FeedBackOptions.styled';
 
 export default class FeedBackOptions extends Component {
   static propTypes = {
-    options: PropTypes.arrayOf(PropTypes.string).isRequired,
+    options: PropTypes.object.isRequired,
     onLeaveFeedback: PropTypes.func.isRequired,
   };
 
@@ -14,6 +14,7 @@ export default class FeedBackOptions extends Component {
 
   render() {
     const { options, onLeaveFeedback } = this.props;
+
     return (
       <ButtonList>
         {Object.keys(options).map(key => (
