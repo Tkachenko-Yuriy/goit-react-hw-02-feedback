@@ -1,5 +1,5 @@
 import {Container} from 'components/App/App.styled'
-import Feedback  from '../feedback/feedback';
+import Feedback  from '../Feedback/Feedback';
 
 
 

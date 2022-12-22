@@ -4,7 +4,7 @@ import Section from 'components/Section/Section';
 import FeedBackOptions from 'components/FeedBackOptions/FeedBackOptions';
 import Statistics from 'components/Statistics/Statistics';
 import Notification from 'components/Notification/Notification';
-import { LeaveFeedback } from './feedback.styled';
+import { LeaveFeedback } from './Feedback.styled';
 
 export default class Feedback extends Component {
   state = {
