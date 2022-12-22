@@ -1,9 +1,9 @@
 // import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Section from 'components/Section/Section';
-import FeedBackOptions from 'components/FeedBackOptions/FeedBackOptions';
-import Statistics from 'components/Statistics/Statistics';
-import Notification from 'components/Notification/Notification';
+import Section from 'components/Section';
+import FeedBackOptions from 'components/FeedBackOptions';
+import Statistics from 'components/Statistics';
+import Notification from 'components/Notification';
 import { LeaveFeedback } from './Feedback.styled';
 
 export default class Feedback extends Component {
