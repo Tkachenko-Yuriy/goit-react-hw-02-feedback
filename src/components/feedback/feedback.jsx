@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Section from 'components/Section/Section';
 import FeedBackOptions from 'components/FeedBackOptions/FeedBackOptions';
 import Statistics from 'components/Statistics/Statistics';
+import Notification from 'components/Notification/Notification';
 import { LeaveFeedback } from './feedback.styled';
 
 export default class Feedback extends Component {
@@ -42,13 +43,17 @@ onLeaveFeedback = key => {
           />
         </Section>
         <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={total}
-            positivePercentage={positivePercentage}
-          />
+          {total ? (
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={total}
+              positivePercentage={positivePercentage}
+            />
+          ) : (
+            <Notification message="There is no feedback" />
+          )}
         </Section>
       </LeaveFeedback>
     );
